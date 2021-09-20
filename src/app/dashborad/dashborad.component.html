@@ -1,0 +1,66 @@
+
+
+  <div class="container">
+
+    <nav> <h4 style="color: rgb(16, 133, 235);">Dashboard</h4></nav>
+    <hr>
+  <main>
+    <form [formGroup]="newvalue"  (ngSubmit)="click()">
+    <div class="form-group">
+      <label > Site Title</label>
+      <input formControlName ="sitetitle" type="text" class="form-control" placeholder="Site Title ">
+
+      <label > NAME</label>
+      <input formControlName="name" type="text" class="form-control" placeholder="Name ">
+
+      <label > PROFILE</label>
+      <input formControlName="profile"  type="text" class="form-control" placeholder="Profile ">
+
+      <label > EMAIL</label>
+      <input formControlName="email" type="email" class="form-control" placeholder="Email ">
+
+      <label > PHONE</label>
+      <input formControlName="phone" type="text" class="form-control" placeholder="Phone ">
+
+      <label > ADDRESS</label>
+      <input formControlName="address" type="text" class="form-control" placeholder=" city - street - 123 ">
+
+      <label for="exampleFormControlTextarea1">About Me</label>
+      <textarea formControlName="aboutme" class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10"></textarea>
+    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+    </div>
+
+
+
+    </form>
+  </main>
+
+
+  <div id="sidebar">
+    <img src="./assets/img/testimonial-2.jpg" width="58%" >
+    <button class="btn btn-primary btn-lg">Change Image</button>
+
+    <div class="card mt-2 mr-2">
+      <div class="card-body">
+        <div class="skill-mf">
+          <p class="title-s">Skill</p>
+          <div *ngFor="let skill of skills">
+            <span>{{skill.name}}</span> <span class="pull-right">{{skill.percentage}}<br></span>
+            <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0"
+              aria-valuemax="100"></div></div></div>
+          <input [(ngModel)]="newSkill.name" type="text" class="form-control" placeholder="skill Name"></div>
+          <input [(ngModel)]="newSkill.percentage" type="text" class="form-control" placeholder="skill percentage"></div>
+          <button (click)="AddSkill()" class="btn btn-primary btn-block mt-2">Add</button>
+          <button (click)="SaveSkill()" class="btn btn-primary btn-block mt-2">Save</button>>
+
+</div></div>;
+
+
+
+
+
+
+
+
+

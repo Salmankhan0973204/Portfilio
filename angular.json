@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./src/assets/css/style.css",
+              "./src/assets/lib/ionicons/css/ionicons.css"
             ],
             "scripts": []
           },
@@ -124,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "portfolio"
+  "defaultProject": "portfolio",
+  "cli": {
+    "analytics": "f0c75cc4-43d2-4c54-a765-b95600e935dd"
+  }
 }

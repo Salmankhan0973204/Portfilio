@@ -1,0 +1,25 @@
+.container{
+  display:grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 0.1fr auto;
+  grid-template-areas:
+  "nav nav "
+  "sidebar main ";
+}
+nav{
+  margin-top: 10px;
+  grid-area: nav;
+}
+
+main{
+  grid-area: main;
+}
+#sidebar{
+   margin-top: 30px;
+  grid-area: sidebar;
+}
+
+
+
+
